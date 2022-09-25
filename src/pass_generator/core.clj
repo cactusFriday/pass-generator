@@ -1,7 +1,11 @@
 (ns pass-generator.core
+  (:require [pass-generator.password :refer [generate-password]]
+            [pass-generator.clipboard :refer [copy-to-clipboard]])
   (:gen-class))
 
 (defn -main
-  "I don't do a whole lot ... yet."
+  "Password generator app entrypoint."
   [& args]
-  (println "Hello, World!"))
+  (copy-to-clipboard (generate-password 9)))
+
+(-main)
