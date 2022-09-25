@@ -1,36 +1,18 @@
 # pass-generator
 
-FIXME: description
+Simple password generator written in Clojure with CLI interface.
 
-## Installation
+## Development
 
-Download from http://example.com/FIXME.
+This project uses leiningen, so you can run it with lein.
+To create uberjar, just do:
+```
+lein uberjar
+```
+And you can run it with:
+```
+java -jar target/pass-generator-0.1.0-SNAPSHOT-standalone.jar --help
 
-## Usage
-
-FIXME: explanation
-
-    $ java -jar pass-generator-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2022 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+  -l, --length LENGTH  8  Password length
+  -h, --help
+```
